@@ -92,33 +92,39 @@ Main Functions
 - exit: Exits the shell.
 
 ## Usage
-  Listing Files and Directories:
+- Listing Files and Directories:
 
-ls lists the contents of the current directory.
-tree displays the directory structure in a tree format.
-Navigating Directories:
+  - ls lists the contents of the current directory.
+  - tree displays the directory structure in a tree format.
+    
+- Navigating Directories:
 
-pwd shows the current directory path.
-cd DIR changes the current directory to DIR.
-Managing Files and Directories:
+  - pwd shows the current directory path.
+  - cd DIR changes the current directory to DIR.
+    
+- Managing Files and Directories:
 
-mkdir D creates a new directory named D.
-touch F creates a new file named F.
-rm P or rmdir P removes a file or directory at path P.
-File Operations:
+  - mkdir D creates a new directory named D.
+  - touch F creates a new file named F.
+  - rm P or rmdir P removes a file or directory at path P.
+ 
+- File Operations:
 
-cp S D copies a file or directory from S to D.
-mv S D moves a file or directory from S to D.
-edit P edits the contents of the file at path P.
-cat P prints the contents of the file at path P.
-File and Directory Information:
+  - cp S D copies a file or directory from S to D.
+  - mv S D moves a file or directory from S to D.
+  - edit P edits the contents of the file at path P.
+  - cat P prints the contents of the file at path P.
+    
+- File and Directory Information:
 
-stat P prints the metadata of a file or directory at path P.
-find N searches for a file or directory named N.
-Permission Management:
+  - stat P prints the metadata of a file or directory at path P.
+  - find N searches for a file or directory named N.
+ 
+- Permission Management:
 
-chmod M P changes the permissions of the file at path P to mode M.
-Miscellaneous:
+  - chmod M P changes the permissions of the file at path P to mode M.
+    
+- Miscellaneous:
 
-clear clears the console screen.
-exit exits the shell.
+  - clear clears the console screen.
+  - exit exits the shell.
