@@ -9,20 +9,8 @@ This program simulates a simple Linux file system with basic shell command funct
 - [Class Descriptions:](#class-descriptions)
 - [Functions:](#functions)
 - [Commands:](#commands)
-  - [print_tree(root, prev_struct)](#print_treeroot-prev_struct)
-  - [print_ls(node=pwd->child)](#print_lsnodepwd-child)
-  - [pwd_str(root, pwd)](#pwd_strroot-pwd)
-  - [find_names(root, pwd, name)](#find_namesroot-pwd-name)
-  - [find_on_pwd(pwd, name)](#find_on_pwdpwd-name)
-  - [find_node(root, pwd, path)](#find_noderoot-pwd-path)
-  - [cd(root, pwd, path)](#cdroot-pwd-path)
-  - [create(root, pwd, path, type)](#createroot-pwd-path-type)
-  - [remove(root, pwd, path)](#removeroot-pwd-path)
-  - [dupl(root, pwd, src_path, dst_path, keep)](#duplroot-pwd-src_path-dst_path-keep)
-  - [cat(root, pwd, path)](#catroot-pwd-path)
-  - [edit(root, pwd, path)](#editroot-pwd-path)
-  - [chmod(root, pwd, path, new_modes)](#chmodroot-pwd-path-new_modes)
-- [Usage](#usage)
+- [Usage:](#usage)
+- [Compilation and Execution:](#compilation-and-execution)
 
 
 ## Overview
@@ -128,3 +116,15 @@ Main Functions
 
   - clear clears the console screen.
   - exit exits the shell.
+
+## Compilation and Execution:
+To compile and run the program, follow these steps:
+
+- Compile the program:
+
+    - g++ -o fs_simulator fs_simulator.cpp
+   
+- Run the program:
+
+   - ./fs_simulator
+
