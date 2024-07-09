@@ -7,8 +7,8 @@ This program simulates a simple Linux file system with basic shell command funct
 **Table of Contents**
 - [Overview:](#overview)
 - [Class Descriptions:](#class-descriptions)
-- [Functions:](#funtions)
-- [Algorithms](#algorithms)
+- [Functions:](#functions)
+- [Commands:](#commands)
   - [print_tree(root, prev_struct)](#print_treeroot-prev_struct)
   - [print_ls(node=pwd->child)](#print_lsnodepwd-child)
   - [pwd_str(root, pwd)](#pwd_strroot-pwd)
@@ -22,7 +22,7 @@ This program simulates a simple Linux file system with basic shell command funct
   - [cat(root, pwd, path)](#catroot-pwd-path)
   - [edit(root, pwd, path)](#editroot-pwd-path)
   - [chmod(root, pwd, path, new_modes)](#chmodroot-pwd-path-new_modes)
-- [Dry Run](#dry-run)
+- [Usage](#usage)
 
 
 ## Overview
@@ -68,3 +68,57 @@ Main Functions
 - cat(TreeNode root, TreeNode pwd, string path):** Prints the contents of a file.
 - chmod(TreeNode root, TreeNode pwd, string path, string new_modes):** Changes the permissions of a file or directory.
 - clear_screen(): Clears the console screen.
+
+## Commands
+ The following commands are supported by the simulated file system:
+
+- help: Prints the help message with a list of available commands.
+- ls: Lists contents of the current directory.
+- tree: Lists contents of the current directory in a tree-like format.
+- pwd: Prints the current working directory.
+- cd DIR: Changes directory to DIR.
+- find N: Finds file or directory named N.
+- stat P: Prints metadata of file or directory at path P.
+- mkdir D: Creates a directory named D.
+- touch F: Creates a file named F.
+- rm P: Removes the file or directory at path P.
+- rmdir P: Removes the directory at path P.
+- cp S D: Copies file or directory from S to D.
+- mv S D: Moves file or directory from S to D.
+- edit P: Edits the file at path P.
+- cat P: Prints the contents of the file at path P.
+- chmod M P: Changes permissions of the file at path P to mode M.
+- clear: Clears the console screen.
+- exit: Exits the shell.
+
+## Usage
+  Listing Files and Directories:
+
+ls lists the contents of the current directory.
+tree displays the directory structure in a tree format.
+Navigating Directories:
+
+pwd shows the current directory path.
+cd DIR changes the current directory to DIR.
+Managing Files and Directories:
+
+mkdir D creates a new directory named D.
+touch F creates a new file named F.
+rm P or rmdir P removes a file or directory at path P.
+File Operations:
+
+cp S D copies a file or directory from S to D.
+mv S D moves a file or directory from S to D.
+edit P edits the contents of the file at path P.
+cat P prints the contents of the file at path P.
+File and Directory Information:
+
+stat P prints the metadata of a file or directory at path P.
+find N searches for a file or directory named N.
+Permission Management:
+
+chmod M P changes the permissions of the file at path P to mode M.
+Miscellaneous:
+
+clear clears the console screen.
+exit exits the shell.
